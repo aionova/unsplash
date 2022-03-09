@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.scss';
-import {Gallery} from "./components/Gallery";
+import { Gallery } from "./components/Gallery";
 
 function App() {
   return (

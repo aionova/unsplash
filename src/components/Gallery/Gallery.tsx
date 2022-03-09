@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Gallery.module.scss';
-import {Card} from "../Card";
-import {getPhotos} from "../../api/photosApi";
-import {Photo} from "../../types/Photo";
+import { Card } from "../Card";
+import { getPhotos } from "../../api/photosApi";
+import { Photo } from "../../types/Photo";
 import { nanoid } from 'nanoid';
 
 export const Gallery = () => {
