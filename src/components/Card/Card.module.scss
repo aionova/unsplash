@@ -1,0 +1,90 @@
+@import '../../constants/colors';
+
+.card {
+  position: relative;
+  color: $white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  z-index: -2;
+  border-radius: 5px;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  align-self: flex-start;
+  text-align: left;
+  word-break: break-all;
+}
+
+.card:hover .text {
+  opacity: 0.9;
+}
+
+.card:hover .download {
+  opacity: 1;
+}
+
+.card:hover .img {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+
+.download {
+  opacity: 0;
+  align-self: flex-end;
+  padding: 7px 10px;
+  background: none;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+
+
+  border: 1px solid $white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, opacity 0.5s;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.name {
+  font-weight: 600;
+}
