@@ -1,5 +1,5 @@
-import {Photo} from "../types/Photo";
-import {UNSPLASH_ACCESS_KEY} from "../constants/variables";
+import { Photo } from "../types/Photo";
+import { UNSPLASH_ACCESS_KEY } from "../constants/variables";
 
 export const getPhotos = async(page = 1): Promise<Photo[]> => {
     return fetch(
